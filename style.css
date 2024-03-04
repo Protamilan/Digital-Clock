@@ -1,0 +1,261 @@
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 0px;
+    margin-left: 0px;
+    background-color: #9EB8D9;
+}
+.container{
+    display: flex;
+    height: 680px;
+    width: 100%;
+    justify-content: center;
+}
+.day{
+    background-color: #7C93C3;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+ul {
+    display: flex;
+    list-style: none;
+    position: absolute;
+    top: 25px;
+    left: 120px;
+    z-index:1;
+    background-color: #bdd7fb;
+    padding-inline-end: 0px;
+    padding-inline-start: 0px;
+    gap: 20px;
+}
+ol{
+    display: flex;
+    list-style: none;
+    position: absolute;
+    top: 25px;
+    left: 520px;
+    padding-inline-start: 0px;
+    z-index:1;
+    background-color: #bdd7fb;
+    gap: 20px;
+}
+li{
+    gap: 20px;
+    color: #909992;
+    background-color: #bdd7fb;
+}
+.child-1{
+     top: 150px;
+     height: 400px;
+     position: relative;
+     width: 990px;
+     background-color: #bdd7fb;
+     border-radius: 15px;
+     border: 3px solid  #bdd7fb;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     animation-duration: 1s;
+     animation-iteration-count: infinite;
+     animation-name: border;
+     box-sizing: border-box;
+}
+.time {
+    background-color: #bdd7fb;
+    height: 400px;
+    position: relative;
+    width: 90%;
+}
+.hr{
+    position: absolute;
+    background-color: #bdd7fb;
+    color: #4a6090;
+    font-size: 280px;
+    z-index: 0;
+}
+.dot{
+    position: absolute;
+    top: 120px;
+    left: 330px;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    background-color: #bdd7fb;
+    border: 5px solid #A25772;
+    animation-name: time;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+.s{
+    top: 235px;
+}
+.min{
+    left: 400px;
+}
+.am{
+    font-size: 60px;
+    left: 750px;
+    top: 90px;
+}
+svg{
+    background-color: #bdd7fb;
+}
+.co{
+    color: #6693c8;
+    top: 200px;
+    font-size: 40px;
+}
+.cu{
+    color: #6693c8;
+    font-size: 40px;
+    top: 250px;
+}
+.pm{
+    top: 270px;
+}
+.copyrights{
+    color: #4a6090;
+    text-align: center;
+    margin-top: 368px;
+    background-color: #bdd7fb;
+}
+.down{
+    display: flex;
+    gap: 20px;
+}
+.date{
+    position: absolute;
+    top: 130px;
+    left: 760px;
+    background-color: #6d87be;
+    color: #d9e2f6;
+    font-size: 19px;
+    padding: 5px 8px;
+    border: 2px solid #6d87be;
+    border-radius: 20px;
+}
+@keyframes panth {
+    0%{
+        border: 2px solid #4a6090;
+    }
+    25%{
+        border: 4px solid #4a6090;
+    }
+    50%{
+        border: 6px solid #4a6090;
+    }
+    100%{
+        border: 2px solid #4a6090;
+    }
+    
+}
+@keyframes border {
+    0%{
+        box-shadow: 3px 3px 1px 2px #4a6090;
+    }
+    50%{
+        box-shadow: 1px 1px 2px 3px #7C93C3;
+    }
+    100%{
+        box-shadow: 1px 2px 2px 7px #7590ca;
+    }
+}
+
+/* Responsive Design for Mobiles*/
+@media screen and (max-width:600px) {
+   .child-1{
+    width: 400px;
+   }
+   .hr{
+    font-size: 150px;
+    top: 70px;
+    
+   }
+   .dot{
+    top: 135px;
+    left: 167px;
+    height: 15px;
+    width: 15px;
+   }
+   .s{
+    top: 198px;
+   }
+   .min{
+    left: 200px;
+   }
+   ul{
+    left: -1px;
+    gap: 10px;
+   }
+   ol{
+        left: 70px;
+        top: 68px;
+        gap: 10px;
+       }
+    .co{
+        top: 255px;
+        left: 60px;
+        font-size: 55px;
+        z-index: 1;
+    } 
+    .cu{
+        top: 255px;
+        left: 200px;
+        font-size: 55px;
+        z-index: 1;
+    }   
+}
+/*Responsiveness for tablets and small screen desktops*/
+@media screen and (max-width:1000px) {
+    
+    .date{
+        position: absolute;
+        top: 328px;
+        left: 120px;
+        font-size: 17px;
+        padding: 5px 8px;
+
+    }
+    .child-1{
+     width: 400px;
+    }
+    .hr{
+     font-size: 150px;
+     top: 70px;
+     
+    }
+    .dot{
+     top: 135px;
+     left: 167px;
+     height: 15px;
+     width: 15px;
+    }
+    .s{
+     top: 198px;
+    }
+    .min{
+     left: 200px;
+    }
+    ul{
+     left: -1px;
+     gap: 10px;
+    }
+    ol{
+         left: 70px;
+         top: 68px;
+         gap: 10px;
+        }
+     .co{
+         top: 250px;
+         left: 10px;
+         font-size: 55px;
+         z-index: 1;
+     } 
+     .cu{
+         top: 250px;
+         left: 200px;
+         font-size: 55px;
+         z-index: 1;
+     }   
+
+    }
